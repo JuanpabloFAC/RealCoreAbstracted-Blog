@@ -1,0 +1,14 @@
+<section class="blog-content">
+  @for (monthGroup of months; track monthGroup.month) {
+    <div class="month-section">
+      <h2 class="month-title">{{ monthGroup.year }} - {{ monthGroup.month }}</h2>
+      <ul class="articles-list">
+        @for (article of monthGroup.articles; track article.title) {
+          <li class="article-item">
+            <a [routerLink]="['/artigo', article.slug]" class="article-link">{{ article.title }}</a>
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</section>

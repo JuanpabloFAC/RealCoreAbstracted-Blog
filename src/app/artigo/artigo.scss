@@ -1,0 +1,39 @@
+.blog-content {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.month-section {
+  margin-bottom: 2.5rem;
+}
+
+.month-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.articles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-item {
+  margin-bottom: 0.75rem;
+}
+
+.article-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #0052a3;
+    text-decoration: underline;
+  }
+}

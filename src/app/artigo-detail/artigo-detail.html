@@ -1,0 +1,16 @@
+<section class="main-blog">
+  <hr class="blog-divider" />
+  <h1 class="blog-title">RealCoreAbstracted Blog</h1>
+  <hr class="blog-divider" />
+
+  @if (article) {
+    <section class="article-detail">
+      <h2 class="article-title">{{ article.title }}</h2>
+      <p class="article-content">{{ article.content }}</p>
+    </section>
+  } @else {
+    <p>Artigo não encontrado.</p>
+  }
+
+  <hr class="blog-divider" />
+</section>
